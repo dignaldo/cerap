@@ -1,0 +1,10 @@
+
+  <!ELEMENT lnk (#PCDATA)>
+  <!ELEMENT vis (#PCDATA)>
+  <!ELEMENT nom (#PCDATA)>
+  <!ELEMENT cmt (#PCDATA)>
+  <!ELEMENT ext (#PCDATA)>
+  <!ELEMENT tai (#PCDATA)>
+  <!ELEMENT act (#PCDATA)>
+  <!ELEMENT pro (#PCDATA)>
+  <!ELEMENT prm (#PCDATA)>  

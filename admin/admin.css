@@ -1,0 +1,53 @@
+    body   {margin:0;border:0;padding:0;font-family:arial;font-size:9px;background:#878B93;}
+
+   .content {position:absolute;left:50%;width:660px;height:82px; margin-left:-330px;top:10px; background:#878B93 url('img/headadmin.gif') center bottom no-repeat;}
+   .content2{position:absolute;left:50%;width:660px;height:600px;margin-left:-330px;top:92px; background: url('img/fondadmin.jpg')  center center}
+   .header {position:absolute;width:150px;right:20px;top:15px}
+   .wsact {position:absolute;text-align:center;top:-5px;width:250px;left:200px;}
+   .entete {position:absolute;font-size:18px;font-family:Trebuchet MS,Arial;text-align:center;font-weight:bold;color:#fff;width:250px;left:200px;top:31px}
+   #message{position:absolute;width:360px;left:150px;height:25px;top:36px;text-align:center;font-family:Trebuchet MS,Arial;font-size:11px;overflow:visible;z-index:20}
+
+   .onglets {position:relative;left:25px;width:610px;height:28px;top:53px;text-align:center;z-index:10}
+   .onglet_on,.onglet_hover  {background:url('img/onglet_on.gif')  center no-repeat;width:101px;height:28px;padding-top:5px;text-align:center;font-size:13px;font-weight:bold;}
+   .onglet_off {background:url('img/onglet_off.gif') center no-repeat;width:102px;height:28px;padding-top:5px;text-align:center;font-size:13px;cursor:pointer}
+   .onglet_hover {font-weight:normal;width:102px;cursor:pointer}
+   #rub1,#rub2,#rub3,#rub4,#rub5,#rub6 {position:absolute;display:none;visibility:hidden;margin-left:27px;width:608px;height:100%;overflow:auto;}
+
+   .titre  {background:url('img/fondtitre.gif') center no-repeat;width:100%;height:24px;text-align:center;
+            font-weight:bold;font-size:12px;margin-bottom:12px;padding-top:4px;vertical-align:middle;}
+   .footer {position:absolute;background: url('img/footer.gif') top center no-repeat;left:50%;width:664px;margin-left:-332px;margin-left:expression('-331px');height:22px;text-align:center;
+            font-weight:bold;font-size:12px;padding-top:16px;vertical-align:middle;bottom:0px;color:#fff}
+    input,select  {border:1px solid #bFb1a5;height:20px;color:#000000;background:#FFFFFF;vertical-align:middle;}
+    iframe {position:relative;border:0;width:600px;height:480px;overflow:visible}
+    td     {font-size:10px;width:25%}
+   .ft     {position:absolute;margin-left:auto;margin-right:auto;width:100%;height:20px;bottom:0px;text-align:left;padding-left:2px;padding-left:expression('1px');}
+   .confsup{position:absolute;margin-top:3px;width:570px;height:24px;text-align:center;border:1px solid #bFb1a5;background:#fff;opacity:.9;display:none}
+   .confsup img {vertical-align:middle;cursor:pointer}
+   .windowLog {width:580px;background:#fff}
+   .windowLog td {border-top:1px solid #bFb1a5; border-left:1px solid #bFb1a5;padding:4px}
+   .center * {font-size:9px}
+   .colorsq {color:#fff;background:#A3A8B5;width:25px;height:15px;padding-left:16px;padding-right:16px;}
+
+   .page {background:#FBEDD4;padding-top:2px}
+   .bouton1 {cursor:pointer;background:url("img/supprimer.gif") top center no-repeat;width:81px;height:28px;color:#FBEDD4;font-weight:bold;padding-top:8px;padding-left:14px}
+   .bouton2 {cursor:pointer;background:url("img/valider.gif")   top center no-repeat;width:81px;height:28px;color:#FBEDD4;font-weight:bold;padding-top:8px;padding-right:14px}
+   .bouton3 {cursor:pointer;background:url("img/connecter.gif") top center no-repeat;width:81px;height:28px;color:#FBEDD4;font-weight:bold;padding-top:8px;padding-right:10px}
+   .bouton4 {cursor:pointer;background:url("img/ajouter.gif")   top center no-repeat;width:81px;height:28px;color:#FBEDD4;font-weight:bold;padding-top:8px;padding-left:19px}
+   .bouton5 {cursor:pointer;background:url("img/maj.gif")       top center no-repeat;width:120px;height:28px;color:#FBEDD4;font-weight:bold;padding-top:8px;padding-left:19px;position:relative;left:10px}
+   .curseur:hover {cursor:pointer}
+   input.checkbox {border:0px;background:#FBEDD4;}
+   .verrou   { position:absolute;width:150px;left:50%;margin-left:-295px;top:0px }
+   .idb      { position:absolute;width:150px;left:50%;margin-left:-235px;top:0px }
+   #list     { border:1px solid #eecfa0;margin:0;padding:0;margin-left:50px}
+   .sortlist { border:1px solid #eecfa0;background:#fff;padding:1px 5px 1px 5px;margin:2px;list-style-type:none;cursor:move}
+   
+   .invite        {position:absolute;z-index:20;left:50%;top:50%;margin-left:-140px;margin-top:-75px;width:277px;height:166px;
+                   background: url('../style/Standard/images/fondinvite3.jpg') center top no-repeat;font-size:12px}
+   .frame_invite  {background: url('../style/Standard/images/fondident3.jpg') center;text-align:center;}
+   .invite td     {text-align:center;}
+   .invite input  {border:1px solid #D5E1E1;background:#F9FDFF;text-align:center}
+   #leftside      {background:transparent url(../style/Standard/images/left.gif) repeat-y scroll left center; height:100%;left:0;position:absolute;top:0;width:150px;z-index:0;}
+   #rightside     {background:transparent url(../style/Standard/images/right.gif) repeat-y scroll left center;height:100%;position:absolute;right:0;top:0;width:150px;z-index:0;}
+
+   .leftimg       {height:100%;left:0;position:absolute;top:0;width:22px;z-index:0;}
+   .rightimg      {height:100%;position:absolute;right:0;top:0;width:22px;z-index:0;}

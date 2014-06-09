@@ -1,0 +1,79 @@
+/* L'habillage */
+*,html,body,div,td,ol,p,dl,dd,dt,ul,li,form,fieldset,.context_item,.context_des,.context_sel,#liens,#infotitre,#charge
+                      {font-family:calibri,verdana,arial,helvetica,sans-serif; font-size:12px;}
+body                  {background: #D5E8F7;color:#000}
+.cadre                {background: #FFF;}
+#frame_dossier        {background: #5B3A5B url('Cosy/images/fonddossier.png') repeat-y right center}
+#frame_favoris        {background: #5B3A5B url('Cosy/images/fonddossier.png') repeat-y right center}
+#frame_adresse        {background: url('Cosy/images/fondbarre.png')}
+#frame_file           {background: url('Cosy/images/fondbarre.png')}
+#frame_infos          {background: url('Cosy/images/fondbarre.png')}
+#barre_act           {background: url('Cosy/images/fondbarre.png');height:36px;}
+#utilpic              {background: url('Cosy/images/fondbarre.png')}
+#util, #tools         {background: url('Cosy/images/fondbarre.png') center center}
+.tool_bar             {background: url('Cosy/images/fondbarre.png'); border:0px;color:#fff}
+.tool_bar a:hover     {background: url('Cosy/images/fondcadre.png'); border:1px solid #BFB1A5;color:#000}
+#upload_bar           {background: url('Cosy/images/fondbarre.png') left top}
+#upload_bar div       {background: url('Cosy/images/fondcadre.png') left top}
+#adresse, #file       {background: url('Cosy/images/fondcadre.png') repeat-x center center;border:0px}
+#context_box          {background: url('Cosy/images/fondcontext.png')}
+#frame_demande        {background: url('Cosy/images/fonddemande.png') repeat-x center top #fff;color:#000}
+#exifpic              {background: url('Cosy/images/fonddemande.png')}
+#fileExist            {background: url('Cosy/images/fonddemande.png')}
+#horloge              {background: url('Cosy/images/fonddemande.png')}
+.views                {background: url('Cosy/images/fonddemande.png')}
+#list_body .on        {background: url('Cosy/images/fonddemande.png') left top}
+#arborescence         {background: url('Cosy/images/fondvide.png')}
+#charge               {background: url('Cosy/images/fondvide.png')}
+.detail_photo         {background: url('Cosy/images/fonddetail.png')}
+#resize_dossier       {background: url('Cosy/images/fondresize.png')}
+#resize_favoris       {background: url('Cosy/images/fondresize.png')}
+#context_box          {background: #5B3A5B url('Cosy/images/fondmenu.png')}
+.v1 .nom              {background: url('Cosy/images/fondnom.png'); color:#000}
+.v1 .cadre            {background: url('Cosy/images/case1.jpg') no-repeat center center;}
+.v2 .cadre            {background: url('Cosy/images/case2.jpg') no-repeat center center;}
+.v3 .cadre            {background: url('Cosy/images/case3.jpg') repeat-x center;}
+.v4 .cadre            {background: url('Cosy/images/case4.jpg') no-repeat center center;}
+.v1 .extension        {font-weight:bold;font-size:10px}
+.v4 .extension        {font-weight:bold;font-size:11px}
+.v4 .datemodif        {font-size:11px}
+.rubrique             {background: url('Cosy/images/fondrubrique.png') center bottom;border:0;color:#000}
+.tool_bar .menu_start {background: url('Cosy/images/toolbar_start.png') no-repeat center}
+.tool_bar .divider    {background: url('Cosy/images/lh_divider.png')    no-repeat center}
+#act                  {background: url('../moteur/changestyle.php?ww=1')   no-repeat top center;height:36px;}
+#headerParams         {background: url('Cosy/images/fonddemande.png') repeat-x center top #fff;}
+.headerDetails        {background: url('Cosy/images/fonddemande.png') repeat-x center top #fff;}
+#headerParams div.nom:hover, #headerParams div.apercucmt:hover, #headerParams div.extension:hover,
+#headerParams div.taille:hover, #headerParams div.datemodif:hover
+               {background: url('Cosy/images/fondnom.png') repeat-x top;}
+               
+/* Elements divers */
+
+input, textarea {border:1px solid #A5A5B1;background:#F1ECF8;color:#000000}
+#frame_favoris .rubrique, #arborescence .rubrique {border:0;}
+
+.cadre_select                       {background:#3C6378;color:#000;margin:0;border:0}
+.frame_invite                       {background:#193055}
+#util img:hover, #utilpic img:hover, #tools img:hover {background:#000;border:1px solid #BFB1A5;}
+.repArbre u, #frame_dossier .lien u, #frame_dossier .lien b, #frame_dossier .lien u:hover   {color:#fff}
+.extension b, #frame_dossier .cadre .lien u {color:#000;}
+.recherche .blocInfo b {color:#fff}
+.selections, .selections u {background: #5B3A5B;color:#fff}
+.boutonsMenu   {width:24px;height:24px}
+.infoGPL       {font-size:11px;}
+
+#context_box   {border-top:1px solid #9B7A9B;border-bottom:1px solid #9B7A9B}
+.context_item  {padding:1px;padding-left:1px; padding-right:2px;border:0px;color:#fff}
+.context_sel   {padding:1px;padding-left:1px; padding-right:2px;border:0px;background:#F1ECF8;}
+.context_des   {color:#907080;}
+#tools         {height:30px}
+.blocInfo li   {background:#5B3A5B url('Cosy/images/fonddossier.png') repeat-y right center;color:#FFF}
+.recherche .lien {color:#fff;}
+.recherche .cadre .lien {color:#000;}
+
+#frame_dossier .rubrique {width:80%;border:0}
+.tool_bar .btn_img:hover, .recherche {color:#fff;}
+.viewComment             {background:#F1ECF8;}
+#infos_rep, #infos_user, .tool_bar a, .tool_bar .btn_img {color:#fff}
+#util,#tools   {top:4px;top:expression('2px');height:32px}
+#fenetre .mini, .moveWindow {font-size:4px;}

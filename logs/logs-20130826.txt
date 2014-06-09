@@ -1,0 +1,5 @@
+2013-08-26 11:10:19 \ webAdmin (127.0.0.1) : Conectado como  webAdmin 
+2013-08-26 11:20:55 \ webAdmin (127.0.0.1) : Conectado como  webAdmin 
+2013-08-26 11:24:31 \ webAdmin (127.0.0.1) : Conectado como  webAdmin 
+2013-08-26 11:33:38 \ webAdmin (192.168.1.86) : Conectado como  webAdmin 
+2013-08-26 11:34:19 \ webAdmin (192.168.1.165) : Connected as  webAdmin 

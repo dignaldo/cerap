@@ -1,0 +1,261 @@
+
+/* Les balises standards redefinies */
+
+*,html,body,div,td,ol,p,dl,dd,dt,ul,li,form,fieldset
+               {margin:0;padding:0;border:0;font-family:verdana,arial,helvetica,sans-serif;font-size:11px;}
+body           {background-color:#D5E8F7;color:#000000;text-align:left;font-size:11px;overflow:hidden;font-weight:normal;}
+img            {border-width:0;vertical-align:middle;}
+u              {text-decoration:none;white-space: nowrap;}
+.lien          {text-decoration:none;color:#000;cursor:pointer;white-space:nowrap}
+.lienover      {text-decoration:underline;color:#000;cursor:pointer;white-space:nowrap}
+li             {text-align:center;text-decoration:none;cursor:pointer}
+.cible         {}
+.cadre         {background:#FFF1D5;color:#000000;text-decoration:none;}
+input          {border:1px solid #BFB1A5;background:#fff;vertical-align:middle;color:#000;}
+textarea       {border:1px solid #BFB1A5;background:#fff;color:#000000;width:98%;height:62px;font-size:12px;font-family:arial;}
+.cr            {font-size:9px;color:#fff;padding-top:15px}
+.logint        {color:#000;background:#FFF1D5;width:180px;height:40px;font-size:30px;text-align:center}
+.passwordt     {color:#000;background:#FFF1D5;width:120px;text-align:center}
+.validert      {color:#000;background:#FFF1D5;width:50px}
+
+
+/* Les cadres internes */
+
+#frame_content {position:absolute;width:82%;bottom:0;left:18%;top:0}
+#frame_galerie {position:absolute;width:100%;top:36px;    right:0;bottom:36px;visibility:visible;overflow:auto}
+#frame_detail  {position:absolute;width:82%;left:18%;top:40%;      right:0;bottom:36px;margin-left:0;margin-top:36px;visibility:hidden; overflow:hidden}
+#frame_adresse {position:absolute;width:82%; left:18%;top:-36px;   right:0;height:36px;visibility:visible;overflow:visible;vertical-align:middle;z-index:10}
+#frame_infos   {position:absolute;width:100%;bottom:-36px;right:0;height:36px;visibility:visible;overflow:visible;}
+#frame_demande {position:absolute;width:100%;bottom:36px; right:0;height:30px;text-align:center;padding-top:12px;visibility:hidden;z-index:100;color:#000}
+#playermp3     {position:absolute;width:188px;bottom:46px;left:4px;text-align:left;height:74px;z-index:500;display:none;}
+#playermp3new  {position:absolute;width:180px;bottom:36px;left:0px;text-align:center;height:255px;z-index:500;display:none;}
+
+#frame_file    {position:absolute;width:82%;top:40%;  left:18%;height:36px;visibility:hidden;overflow:visible;vertical-align:middle;}
+#frame_dossier {position:absolute;width:18%; top:0;bottom:36px;left:-100%;visibility:visible;overflow:visible;text-align:left;z-index:0;background:#fff;color:#fff}
+#frame_favoris {position:absolute;width:18%; top:36px;bottom:36px;left:100%;overflow:visible;   text-align:center;z-index:0;padding-top:0px;color:#fff}
+#arbre         {position:absolute;width:100%;top:0;    left:0;height:auto;overflow:hidden;margin-top:7px;color:#000}
+#arborescence  {position:absolute;top:36px;  left:0; right:6px;bottom:0px; visibility:visible;padding:0px;overflow:auto;color:#000}
+#resize_dossier{position:absolute;width:6px; top:36px; right:0;bottom:0;visibility:visible;overflow:visible;text-align:left;z-index:0;cursor:w-resize;background:url('Standard/images/fonddossier.png')}
+#resize_favoris{position:absolute;width:6px; top:0;    left:0;bottom:0;visibility:visible;overflow:visible;text-align:left;z-index:0;cursor:w-resize;background:url('Standard/images/fonddossier.png')}
+#resize_content{position:absolute;width:100%;top:0;    left:0;height:6px; visibility:visible;overflow:visible;text-align:left;z-index:0;cursor:s-resize;display:none}
+#barre_act     {position:absolute;width:18%; top:0;    left:0;cursor:pointer}
+.recherche     {position:absolute;top:0;  left:6px; right:0px;bottom:0px; visibility:visible;padding:0px;padding-top:6px;text-align:left;overflow:auto;color:#000}
+#cadrpic       {position:absolute;width:100%;top:0;    left:0;height:100%;overflow:hidden;text-align:left;}
+#exifpic       {position:absolute;width:100%;bottom:0; left:0;height:auto;overflow:visible;text-align:center;padding-top:5px}
+#util,#tools   {position:absolute;right:0;padding-left:15px;height:30px;top:5px;top:expression('3px')}
+#adresse       {position:absolute;width:100%;left:5px;top:5px;height:24px;border:1px solid #bFb1a5;background:#fff;vertical-align:middle;padding-right:15px;overflow:hidden;text-align:left}
+#file          {position:absolute;left:5px;top:5px;height:24px;width:90%;border:1px solid #bFb1a5;background:#fff;vertical-align:middle;overflow:hidden;text-align:left}
+#infos_rep     {position:absolute;left:15px;top:12px;color:#000;}
+#horloge       {position:absolute;border:0px;background:#fff;left:45%;right:35%;top:3px;max-height:24px;overflow:hidden;font-weight:bold;font-size:10px;border:1px solid #9999CC;padding:2px;text-align:center}
+#infos_user    {position:absolute;right:15px;top:1px;color:#000;cursor:pointer}
+#apercu        {width:100%;height:100%;border:none;background:#fff;overflow:auto;}
+#util img, #utilpic img, #tools img  {margin:1px}
+#tools         {height:30px}
+#visuImg       {cursor:move}
+#util img:hover, #utilpic img:hover, #tools img:hover
+               {margin:0;border:1px solid #BFB1A5;background:#FFF1D5;cursor:pointer}
+.cadre_select  {margin:0;background:#3C6378;}
+#frame_galerie .cadre_select  {border:0;}
+#frame_favoris .rubrique, #arborescence .rubrique {border:0;}
+#editContent   {font-family:Consolas,Courier New}
+#fenetre input {margin:8px}
+.boutonsMenu   {width:22px;height:22px;cursor:pointer;}
+.boutonsMenuContext {width:22px;height:22px;cursor:pointer;}
+#headerParams .onglet {top:0;padding-top:2px;}
+#headerParams:hover {cursor:pointer;}
+#layerDragDrop {position:absolute;z-index:1;display:none;font-size:9px;text-align:center;width:80px;background:#D5E8F7;}
+#layerDragDrop img {max-width:32px;max-height:32px;padding-bottom:4px}
+.blocInfo      {margin-left:10px;margin-bottom:24px;}
+.blocInfo li   {text-align:left}
+.recherche .lien, .recherche .lienover {font-weight:bold;}
+.infoGPL       {background:#eee;color:#444;border:1px solid #ccc;margin-bottom:15px;font-size:10px;text-align:left;padding:5px}
+.titreGPL      {background:#eee;color:#444;border:1px solid #ccc;margin-bottom:15px;font-size:10px;text-align:left;padding:5px;position:absolute;width:250px;display:none;left:50%;margin-top:30px;z-index:10}
+.infoGPL p     {margin:4px}
+#leftside      {background:transparent url(Standard/images/left.gif) repeat-y scroll left center; height:100%;left:0;position:absolute;top:0;width:150px;z-index:0;}
+#rightside     {background:transparent url(Standard/images/right.gif) repeat-y scroll left center;height:100%;position:absolute;right:0;top:0;width:150px;z-index:0;}
+
+/* L'habillage */
+
+#act           {background: url('../moteur/changestyle.php?wb=1') no-repeat center center; position:relative;width:100%;height:41px;}
+#header        {background: url('../moteur/changestyle.php?wl=1') no-repeat center center; position:absolute;left:50%;top:15%;margin-left:-170px;margin-top:-40px;width:340px;height:85px;}
+.invite        {background: url('Standard/images/fondinvite3.jpg') left top no-repeat;position:absolute;text-align:center;left:50%;margin-left:-135px;top:50%;margin-top:-82px;width:270px;height:165px;font-size:12px;}
+.frame_invite  {background: #878B93;text-align:center;position:absolute;width:100%;height:100%;text-align:center;}
+#frame_adresse {background: url('Standard/images/fondbarre.png') repeat-x bottom;}
+#frame_file    {background: url('Standard/images/fondbarre.png') repeat-x bottom;}
+#frame_infos   {background: url('Standard/images/fondbarre.png') repeat-x top;background-color:#fff;}
+#frame_demande {background: url('Standard/images/fonddemande.png') repeat-x center top #fff;}
+#utilpic       {background: url('Standard/images/fondbarre.png') repeat-x bottom #fff ;}
+#exifpic       {background: url('Standard/images/fonddemande.png') repeat-x top;}
+#cadrpic       {background: url('Standard/images/fondgalerie.jpg') repeat-x top;}
+#fileExist     {background: url('Standard/images/fonddemande.png');}
+#arborescence  {background: url('Standard/images/fondvide.png');}
+#context_box   {background: #FFF url('Standard/images/fondcontext.png');}
+#charge        {background: url('Standard/images/fondvide.png');white-space:nowrap;}
+#fenetre input,
+.elmInput      {background: url('Standard/images/fondnom.png');width:140px;}
+.detail_photo  {background: url('Standard/images/fonddetail.png');}
+#barre_act    {background: url('Standard/images/fondbarre.png') repeat-x scroll center top;height:36px;z-index:10}
+#frame_favoris {background: #fff;}
+#divlogin      {height:55px;}
+#divpass       {height:30px;}
+#divvalid      {height:30px;}
+#util, #tools  {background: url('Standard/images/fondbarre.png') repeat-x scroll center center}
+#message       {text-align:center;width:245px;height:30px;margin:14px;z-index:50;color:#000;margin-bottom:0}
+.invite td     {text-align:center;height:18px}
+.invite input  {border:1px solid #D5E1E1;background:#F9FDFF;}
+.repArbre u, u, .recherche .rubrique b, #frame_dossier .lien u, #frame_dossier .lien b, #frame_dossier .lien u:hover,.extension b  {color:#000}
+#arbre .cadre_select span.lien u {color:#fff}
+.repArbre      {z-index:200;white-space:nowrap;}
+.cadrcom       {border:1px solid #BFB1A5}
+#frame_demande input {border:1px solid #BFB1A5;background:#FFF1D5;color:#000000;width:150px;font-size:13px;font-weight:bold;font-family:Trebuchet MS,Arial;vertical-align:middle}
+
+
+/* Elements divers */
+
+#context_box   {position:absolute;width:192px; border:1px solid #9D9DA1; font-size:11px; cursor:default; display:none;padding:3;z-index:500;}
+.context_item  {width:190px;padding-left:0px; padding-right:0px;color:#000000;text-align:left;border:1px solid #ffffff;}
+.context_des   {width:190px;padding-left:0px; padding-right:0px;color:#888888;text-align:left;}
+.context_sel   {width:190px;padding-left:0px; padding-right:0px;background:#FFF1D5;text-align:left;border:1px solid #bFb1a5;}
+#boite         {left:10px;width:124px;overflow:hidden;visibility:visible;position:absolute;}
+#liens,#infotitre,#charge {position:relative;font-family:Verdana;font-size:12px;font-weight:normal;top:1px;top:expression('0px');}
+#frame_file #infotitre { top:1px; margin-left:22px; }
+.newAccount    {position:absolute;top:80%;color:#FFF;left:50%;margin-left:-125px;cursor:pointer;text-align:center;width:250px;z-index:0}
+
+#frame_hidden  {overflow:hidden;visibility:hidden;display:none;}
+.masque        {overflow:hidden;visibility:hidden;display:none;}
+.devoile       {overflow:hidden;visibility:hidden;display:block;position:absolute}
+.montre        {overflow:hidden;visibility:visible;font-family:Arial;font-size:11px;padding-left:15px;color:#000000;}
+
+#close_exif    {position:absolute;right:18px;top:6px;width:18px;height:18px;z-index:301}
+#close_arbre   {position:absolute;right:0px;top:50%;width:18px;height:18px;z-index:301;visibility:visible}
+#close_favoris {position:absolute;left:0px;top:50%;width:18px;height:18px;z-index:301;visibility:visible}
+.detail_photo  {position:relative;width:450px;padding-top:15px;font-size:10px;text-align:center}
+.viewComment   {width:100%;height:50px;text-align:left;padding:8px;background:#FFF1D5;overflow:auto;z-index:100}
+.rubrique      {position:relative;margin:0;border:1px solid #BFB1A5;background:#FFF1D5;color:#440600;font-size:13px;text-decoration:none;margin-bottom:7px;white-space:nowrap}
+.infosexif li  {position:relative;list-style-type:none;display:block;text-align:left;margin:6px}
+#exifpic .infosexif li { float:left;margin:0; }
+#exifpic #blocExif { width:150px;float:left; }
+.lienfichier   {text-decoration:none;color:#000;cursor:pointer;white-space:nowrap;margin-top: 2px; margin-left: 15px;}
+#divExif dt,#divExif dl,#divCommentaire dt {float:none;display:block;text-align:left;}
+#divExif dt,#divCommentaire dt {padding:1px;border:1px;margin:1px}
+#dragLayer     {margin-left:6px;}
+#headerParams, .headerDetails
+               {position:relative;background: url('Standard/images/fonddemande.png') repeat-x center top #fff;width:100%;height:auto;
+                font-weight:bold;padding-top:10px;padding-bottom:10px;overflow:hidden}
+.headerDetails {text-align:center}
+#headerParams  {position:absolute;top:36px;padding:0;height:20px;z-index:1;display:none;left:0}
+#detailFileMime{position:relative;font-size:9px;white-space:nowrap;margin-left:20px;top:-1px;}
+.views         {position:absolute;margin-top:-10px;width:100px;font-size:9px;height:18px;background:url('Standard/images/fonddemande.png')}
+.dotsep        {color:#88A8C8}
+
+/* Selon le type d'affichage des dossiers */
+.v1 img,.v2 img,.v3 img,.v4 img {vertical-align:top}
+
+/* Miniatures */
+.v1 ul         {list-style-type:none;cursor:pointer}
+.v1 li         {position:relative;width:103px;height:120px;float:left;display:block;padding:1px;padding-top:5px;padding-left:2px}
+.v1 .caseimg   {position:relative;width:100px;height:80px; overflow:hidden;margin-left:1px;cursor:pointer}
+.v1 .extension {position:relative;width:100px;height:15px; text-align:center; font-size:9px; font-weight:normal;color:#000;margin-top:2px;overflow:hidden;white-space:nowrap}
+.v1 .nom,
+.selections    {position:relative;width:100px;height:16px; text-align:center; font-size:12px;font-weight:bold;background:#F5F8FA;overflow:hidden;color:#000;margin-top:4px;white-space: nowrap;}
+.selections, .selections u {background:#3C6378;color:#FFF;}
+.v1 .favo      {position: absolute; margin-left: -15px; margin-top: 48px; width: 22px; height: 22px;}
+.v1 .prevType  {position: absolute; right: 0; top:48px;}
+.v1 .cadre     {background: url('Standard/images/case1.jpg') no-repeat center center;}
+.v1 .caseimg img  {max-height:64px;}
+
+/* Listing */
+.v2 ul         {list-style-type:none;cursor:pointer}
+.v2 li         {float:left;display:block;position:relative;width:200px;height:32px; text-align:left;vertical-align:middle;overflow:hidden;cursor:pointer;white-space:nowrap}
+.v2 .caseimg   {position:relative;width:40px; height:32px; text-align:center; top:0px;vertical-align:middle;cursor:pointer;overflow:hidden}
+.v2 .nom       {position:relative;width:150px;height:24px; text-align:left;   top:4px;font-size:11px;font-weight:normal;overflow:hidden;vertical-align:middle;white-space: nowrap;}
+.v2 .cadre     {background: url('Standard/images/case2.jpg') no-repeat center center;}
+.v2 .caseimg img {margin-right:5px}
+
+/* Détails */
+.v3 ul         {list-style-type:none;cursor:pointer}
+.v3 li         {border:0;margin:0;float:left;display:block;position:relative;width:100%; height:32px; text-align:left;vertical-align:middle;}
+.v3 .caseimg   {position:relative;width:56px; height:32px; float:left;text-align:center; top:0px;left:8px;  overflow:hidden;cursor:pointer}
+.v3 .nom       {position:relative;width:32%;height:100%; float:left;text-align:left;   top:8px;  font-size:11px;font-weight:normal;white-space: nowrap;overflow:hidden}
+.v3 .apercucmt {position:relative;width:16%;height:100%; float:left;text-align:left;   top:8px;font-size:11px;font-weight:normal;;overflow:hidden}
+.v3 .extension {position:relative;width:12%;height:100%; float:left;text-align:center; top:4px;font-weight:bold;overflow:hidden}
+.v3 .taille    {position:relative;width:10%;height:100%; float:left;text-align:left;   top:8px;}
+.v3 .datemodif {position:relative;width:18%;height:100%; float:left;text-align:right;  top:8px;font-size:9px}
+.v3 .extension .labelType {text-align:center; top:16px;font-size:9px;font-weight:normal;white-space:nowrap}
+#dragLayer.v3 .cadre,
+#dragLayer.v3 .cadre .pair{background: url('Standard/images/case3.jpg') repeat-x center;}
+#dragLayer.v3 li.cible.pair{background: url('Standard/images/fondgrise.png') repeat-x bottom;}
+
+
+#headerParams div.nom:hover, #headerParams div.apercucmt:hover, #headerParams div.extension:hover,
+#headerParams div.taille:hover, #headerParams div.datemodif:hover
+               {background: url('Standard/images/fondnom.png') repeat-x top;}
+.depDivider    { }
+.blocAscDesc   {position:relative;float: right;top:3px;margin-right:5px;}
+
+/* Grandes icones */
+.v4 ul         {list-style-type:none;cursor:pointer}
+.v4 li         {float:left;display:block;position:relative;width:250px;height:64px; text-align:left;vertical-align:top}
+.v4 .caseimg   {position:absolute;width:64px; height:64px; text-align:center; overflow:hidden;vertical-align:middle;cursor:pointer}
+.v4 .nom       {position:relative;width:170px;             text-align:left;left:70px;top:0px;font-size:11px;font-weight:bold;margin-right:70px;overflow:hidden;white-space: nowrap;margin-top:8px}
+.v4 .extension {position:relative;width:250px;height:10px; text-align:left;left:70px;top:4px;font-size:9px; font-weight:normal;}
+.v4 .datemodif {position:relative;width:250px;height:10px; text-align:left;left:70px;top:0px;font-size:9px;margin-top:3px}
+.v4 .cadre     {background: url('Standard/images/case4.jpg') no-repeat center center;}
+
+#fenetre       {position:absolute;width:390px;height:160px;display:none}
+#fenetre table {width:250px;height:160px}
+#fenetre table, #fenetre td, #fenetre tr {margin:0;padding:0;border:0;}
+#fenetre .mini {width:1px;height:1px;font-size:4px}
+#fenetre #contenu_fenetre {position:relative;width:100%;text-align:center;font-size:11px;color:#000}
+#contenu_fenetre {padding-top: 8px;}
+#fenetre .fond_fenetre {background: #fff url('Standard/images/fonddemande.png') repeat-x top center;}
+#contenu_fenetre td {height:28px;font-size:11px}
+#contenu_fenetre select {margin:8px;font-size:11px}
+#playermp3 .mini {width:1px;height:1px;font-size:1px}
+
+/*<group=Toolbar>*/
+  .tool_bar                { width:100%; height: 22px; margin:0px; padding:0px; border:0px; vertical-align:middle; border-bottom:1px solid #aaa; background:#fff; color:#000 }
+  .tool_bar a              { padding:3px 2px; color:#000; font: 11px/20px arial; font-weight:bold; text-decoration:none; display:inline; vertical-align: middle; cursor:pointer; margin: 1px; }
+  .tool_bar a:hover        { background:#FFF1D5;padding:3px 2px; margin: 0px; line-height: 20px; font-size: 11px; border:1px solid #BFB1A5; }
+  .tool_bar .btn_img       { padding: 4px 8px; background-position: center center; text-decoration:none; color:#000; }
+  .tool_bar .btn_img:hover { padding: 4px 8px; }
+  .tool_bar .menu_start    { background:url('Standard/images/toolbar_start.png') no-repeat center; width:3px; display:inline;padding:0px 0px 0px 5px; }
+  .tool_bar .divider       { background:url('Standard/images/lh_divider.png') no-repeat center; width:3px; display:inline;}
+  .wdebug {width:100%;height:0px;border:0px;margin:0px;}
+/*</group>*/
+
+/*<group=Page Status Bar>*/
+  #page_status_bar         { width:100%;height:20px;border:1px outset rgb(242,242,242);background:#FFF1D5;}
+  #page_status_bar tr td   { border:1px inset rgb(242,242,242);}
+/*</group>*/
+
+/*<group=File Upload List>*/
+  #list_body               { width: 100%; }
+  #list_body tr td         { font: 11px Arial; line-height:16px; border: 0px; height: 16px; padding: 0px 0px 0px 4px; cursor: pointer; vertical-align:middle; }
+  #list_body .on           { background:#FFF1D5;}
+/*</group>*/
+
+/*<group=Upload Bar>*/
+  #upload_bar              { background: #FFF1D5; border: 1px solid #BFB1A5; height: 12px; padding: 0px;  margin: 0px; }
+  #upload_bar div          { background: #000000; border: 1px solid #BFB1A5; height: 12px; line-height:12px; font-size:10px; margin: 0px; padding: 0px; }
+  .upload_filename         { color: rgb(0,0,0);  font-weight: bold;font-size: 12px;}
+  .upload_stats            { color: rgb(100,100,100);font-size: 10px;}
+/*</group>*/
+
+@media print {
+
+body           {overflow:visible;background:#FFF}
+#frame_content {position:relative;width:100%;height:auto;left:0;top:0;visibility:visible;overflow:visible;display:block;bottom:auto}
+#frame_galerie {position:relative;width:100%;height:auto;left:0;top:0;visibility:visible;overflow:visible;display:block;bottom:auto}
+#frame_detail  {position:relative;width:100%;height:auto;left:0;top:0;visibility:visible;overflow:visible;display:block}
+#utilpic,#util {position:absolute;display:none}
+#frame_infos   {position:absolute;display:none}
+#context_box   {position:absolute;display:none}
+#frame_dossier {position:absolute;display:none}
+#frame_favoris {position:absolute;display:none}
+#frame_demande {position:absolute;display:none}
+#frame_detail  {position:absolute;display:none}
+#frame_file    {position:absolute;display:none}
+#adresse       {width:auto;}
+
+}
